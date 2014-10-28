@@ -13,6 +13,11 @@
 		D91364B919FFF12C00158978 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91364B819FFF12C00158978 /* Images.xcassets */; };
 		D91364BC19FFF12C00158978 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91364BA19FFF12C00158978 /* LaunchScreen.xib */; };
 		D91364C819FFF12C00158978 /* ConceptEventEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91364C719FFF12C00158978 /* ConceptEventEngineTests.swift */; };
+		D91364D219FFF15A00158978 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91364D119FFF15A00158978 /* Engine.swift */; };
+		D91364D419FFF2D500158978 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91364D319FFF2D500158978 /* Entity.swift */; };
+		D91364D619FFF34F00158978 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91364D519FFF34F00158978 /* Queue.swift */; };
+		D91364D819FFF75900158978 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91364D719FFF75900158978 /* Event.swift */; };
+		D91364DA19FFF7FC00158978 /* TestLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91364D919FFF7FC00158978 /* TestLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		D91364C119FFF12C00158978 /* ConceptEventEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConceptEventEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91364C619FFF12C00158978 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D91364C719FFF12C00158978 /* ConceptEventEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptEventEngineTests.swift; sourceTree = "<group>"; };
+		D91364D119FFF15A00158978 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		D91364D319FFF2D500158978 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		D91364D519FFF34F00158978 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		D91364D719FFF75900158978 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D91364D919FFF7FC00158978 /* TestLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +88,16 @@
 			isa = PBXGroup;
 			children = (
 				D91364B119FFF12C00158978 /* AppDelegate.swift */,
+				D91364D119FFF15A00158978 /* Engine.swift */,
+				D91364D919FFF7FC00158978 /* TestLib.swift */,
+				D91364D519FFF34F00158978 /* Queue.swift */,
+				D91364D319FFF2D500158978 /* Entity.swift */,
 				D91364B319FFF12C00158978 /* ViewController.swift */,
 				D91364B519FFF12C00158978 /* Main.storyboard */,
 				D91364B819FFF12C00158978 /* Images.xcassets */,
 				D91364BA19FFF12C00158978 /* LaunchScreen.xib */,
 				D91364AF19FFF12C00158978 /* Supporting Files */,
+				D91364D719FFF75900158978 /* Event.swift */,
 			);
 			path = ConceptEventEngine;
 			sourceTree = "<group>";
@@ -212,7 +227,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91364D619FFF34F00158978 /* Queue.swift in Sources */,
+				D91364D419FFF2D500158978 /* Entity.swift in Sources */,
+				D91364DA19FFF7FC00158978 /* TestLib.swift in Sources */,
 				D91364B419FFF12C00158978 /* ViewController.swift in Sources */,
+				D91364D219FFF15A00158978 /* Engine.swift in Sources */,
+				D91364D819FFF75900158978 /* Event.swift in Sources */,
 				D91364B219FFF12C00158978 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
