@@ -9,10 +9,10 @@
 import Foundation
 
 struct Event {
-    var action:(Entity, Int)->(Int?)
+    var action:(entity: Entity, id: Int)->(Int?)
     var id: Int
     
-    init(id: Int, action: (Entity, Int)->(Int?)) {
+    init(id: Int, action: (entity: Entity, id: Int)->(Int?)) {
         
         self.action = action
         self.id = id
