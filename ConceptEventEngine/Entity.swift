@@ -12,8 +12,6 @@ struct Entity {
     var number: Int
     var failFlag: Int?
     
-
-    
     init(number: Int){
         self.number = number
         self.failFlag = nil
