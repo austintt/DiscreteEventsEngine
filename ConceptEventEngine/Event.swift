@@ -9,13 +9,24 @@
 import Foundation
 
 struct Event {
-    var action:(Entity)->()
-    var number: Int
+    var action:(Entity, Int)->(Int?)
+    var id: Int
     
-    init(number: Int, action: (Entity)->()) {
+    init(id: Int, action: (Entity, Int)->(Int?)) {
+        
         self.action = action
-        self.number = number
+        self.id = id
     }
     
     
+}
+
+let didFail = {(entity: Entity) -> (Bool) in
+    var didFailFlag = false
+    println("Checking for failure")
+    if entity.failFlag != nil {
+        println("Found failure")
+        didFailFlag = true
+    }
+    return didFailFlag
 }

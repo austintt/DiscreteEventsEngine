@@ -17,11 +17,35 @@ func runSim() {
 
 func genEvents() -> [Event] {
     var events: [Event] = []
-    for (var i = 0; i < 10; i++) {
-        events.append(  Event(number: i, action: {(entity: Entity) -> () in println("Action performed on Entity number: \(entity.number)")}))
+    var i = 0;
+    for (i; i < 10; i++) {
+        events.append(  Event(id: i, action: {(entity: Entity, id: Int) -> (Int?) in
+            
+            //check if there was a failure
+            
+            if didFail(entity) {
+                println("About to return failFlag for ID: \(entity.failFlag!)")
+                return entity.failFlag!
+            }
+            
+            
+            //perform action
+            println("Action performed on Entity number: \(entity.number)")
+            
+            //set fail flag for testing purose
+            let randNum = Int(arc4random_uniform(10))
+            if randNum % 5 == 0 {
+                entity.failFlag = id
+            }
+            
+            //close
+            return nil
+        }))
         println("Generated event number \(i)")
+        
     }
     
+
     return events
 }
 
