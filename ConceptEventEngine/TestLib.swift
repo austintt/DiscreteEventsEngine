@@ -37,7 +37,7 @@ func genEvents() -> [Event] {
             if randNum % 5 == 0 {
                 entity.failFlag = id
             }
-            
+            // Test
             //close
             return nil
         }))
