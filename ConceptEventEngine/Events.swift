@@ -8,7 +8,7 @@
 
 import Foundation
 
-let eventOne = {(entity: Entity) -> as
+let eventOne = {(entity: Entity) -> () as
     
     //generate uuid
     let uuid = SUUID().UUIDString
@@ -39,7 +39,7 @@ let eventOne = {(entity: Entity) -> as
     //pass to next closure
 }
 
-let eventTwo = ({(entity: Entity) ->  as
+let eventTwo = {(entity: Entity) ->  as
     
     //generate uuid
     let uuid = SUUID().UUIDString
@@ -59,4 +59,4 @@ let eventTwo = ({(entity: Entity) ->  as
     //pass to next closure
 
     
-})
+}

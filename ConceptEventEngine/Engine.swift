@@ -8,7 +8,7 @@
 
 import Foundation
 
-func dispatchEntities(entities: [Entity], event: Event) {
+func dispatchEntities(entities: [Entity], event: (entity:Entity)->()) {
     println("Dispatching \(entities.count) entities")
     //dispatch to thread and run queue
     
