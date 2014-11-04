@@ -8,9 +8,9 @@
 
 import Foundation
 
-func simulateEntity(entity: Entity, event: (entity:Entity)->()) {
-    println("Simulating enitiy number \(entity.number)")
-    event(entity: entity)
-}
-
-//queue done
+//func simulateEntity(entity: Entity, event: (entity:Entity)->()) {
+//    println("Simulating enitiy number \(entity.number)")
+//    event(entity: entity)
+//}
+//
+////queue done
