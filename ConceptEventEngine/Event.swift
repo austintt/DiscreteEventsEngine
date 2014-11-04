@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 Austin Tooley. All rights reserved.
 //
 
+/************
+ DEPRICATED
+*************/
 import Foundation
 
 struct Event {

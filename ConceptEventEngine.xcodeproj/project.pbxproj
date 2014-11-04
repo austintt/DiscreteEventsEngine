@@ -18,6 +18,7 @@
 		D91364D619FFF34F00158978 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91364D519FFF34F00158978 /* Queue.swift */; };
 		D91364D819FFF75900158978 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91364D719FFF75900158978 /* Event.swift */; };
 		D91364DA19FFF7FC00158978 /* TestLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91364D919FFF7FC00158978 /* TestLib.swift */; };
+		D9333A2E1A09361D00CF0C71 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9333A2D1A09361D00CF0C71 /* Events.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		D91364D519FFF34F00158978 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		D91364D719FFF75900158978 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		D91364D919FFF7FC00158978 /* TestLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestLib.swift; sourceTree = "<group>"; };
+		D9333A2D1A09361D00CF0C71 /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				D91364BA19FFF12C00158978 /* LaunchScreen.xib */,
 				D91364AF19FFF12C00158978 /* Supporting Files */,
 				D91364D719FFF75900158978 /* Event.swift */,
+				D9333A2D1A09361D00CF0C71 /* Events.swift */,
 			);
 			path = ConceptEventEngine;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				D91364D419FFF2D500158978 /* Entity.swift in Sources */,
 				D91364DA19FFF7FC00158978 /* TestLib.swift in Sources */,
 				D91364B419FFF12C00158978 /* ViewController.swift in Sources */,
+				D9333A2E1A09361D00CF0C71 /* Events.swift in Sources */,
 				D91364D219FFF15A00158978 /* Engine.swift in Sources */,
 				D91364D819FFF75900158978 /* Event.swift in Sources */,
 				D91364B219FFF12C00158978 /* AppDelegate.swift in Sources */,
@@ -427,6 +431,7 @@
 				D91364CD19FFF12C00158978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D91364CE19FFF12C00158978 /* Build configuration list for PBXNativeTarget "ConceptEventEngineTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +440,7 @@
 				D91364D019FFF12C00158978 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

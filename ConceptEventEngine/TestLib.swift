@@ -9,10 +9,10 @@
 import Foundation
 
 func runSim() {
-    let events = genEvents()
+//    let events = genEvents()
     let entities = genEntities()
     
-    dispatchEntities(entities, events)
+    dispatchEntities(entities, eventOne)
 }
 
 func genEvents() -> [Event] {
@@ -35,7 +35,7 @@ func genEvents() -> [Event] {
             //set fail flag for testing purose
             let randNum = Int(arc4random_uniform(10))
             if randNum % 5 == 0 {
-                entity.failFlag = id
+//                entity.failFlag = id
             }
             
             //close
