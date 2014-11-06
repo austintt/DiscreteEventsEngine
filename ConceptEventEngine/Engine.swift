@@ -8,3 +8,14 @@
 
 import Foundation
 
+func dispatchEntities(entities: [Entity], events: [Event]) {
+    println("Dispatching \(entities.count) entities to \(events.count) events")
+    //dispatch to thread and run queue
+    
+    for entity in entities {
+        simulateEntity(entity, events)
+    }
+    
+    //notify library when complete
+    
+}

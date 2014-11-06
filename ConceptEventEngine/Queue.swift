@@ -8,9 +8,20 @@
 
 import Foundation
 
-//func simulateEntity(entity: Entity, event: (entity:Entity)->()) {
-//    println("Simulating enitiy number \(entity.number)")
-//    event(entity: entity)
-//}
-//
-////queue done
+func simulateEntity(entity: Entity, events: [Event]) {
+    println("Simulating enitiy number \(entity.number)")
+    for (var i = 0; i < events.count; i++){
+        println("about to perform action number \(events[i].id)")
+        let failFlag = events[i].action(entity: entity, id: events[i].id)
+        
+        //go back to failure
+        if failFlag != nil {
+            println("Attempting to go back to event \(i) to fix failure")
+            i = failFlag! - 1
+            
+        }
+        
+    }
+}
+
+//queue done
